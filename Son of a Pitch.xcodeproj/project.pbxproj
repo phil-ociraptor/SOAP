@@ -1,0 +1,577 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AE6DB1E9185EB9CC00BEF01C /* Piano.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6DB1E8185EB9CC00BEF01C /* Piano.m */; };
+		AE6DB1EC1862E17F00BEF01C /* OctaveSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6DB1EB1862E17F00BEF01C /* OctaveSlider.m */; };
+		AE6DB1F21862F12700BEF01C /* 1355112_65f9_625x625.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AE6DB1EE1862F12700BEF01C /* 1355112_65f9_625x625.jpg */; };
+		AE6DB1F31862F12700BEF01C /* replay icon.png in Resources */ = {isa = PBXBuildFile; fileRef = AE6DB1EF1862F12700BEF01C /* replay icon.png */; };
+		AE6DB1F41862F12700BEF01C /* shuffle-icon-small.png in Resources */ = {isa = PBXBuildFile; fileRef = AE6DB1F01862F12700BEF01C /* shuffle-icon-small.png */; };
+		AE6DB1F51862F12700BEF01C /* shuffle-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = AE6DB1F11862F12700BEF01C /* shuffle-icon.png */; };
+		AE6DB1F71862F25400BEF01C /* replay-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = AE6DB1F61862F25400BEF01C /* replay-icon.png */; };
+		AE997AB31846893600D110A9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE997AB21846893600D110A9 /* Foundation.framework */; };
+		AE997AB51846893600D110A9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE997AB41846893600D110A9 /* CoreGraphics.framework */; };
+		AE997AB71846893600D110A9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE997AB61846893600D110A9 /* UIKit.framework */; };
+		AE997ABD1846893600D110A9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AE997ABB1846893600D110A9 /* InfoPlist.strings */; };
+		AE997ABF1846893600D110A9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE997ABE1846893600D110A9 /* main.m */; };
+		AE997AC31846893600D110A9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE997AC21846893600D110A9 /* AppDelegate.m */; };
+		AE997AC51846893600D110A9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE997AC41846893600D110A9 /* Images.xcassets */; };
+		AE997ACC1846893600D110A9 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE997ACB1846893600D110A9 /* XCTest.framework */; };
+		AE997ACD1846893600D110A9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE997AB21846893600D110A9 /* Foundation.framework */; };
+		AE997ACE1846893600D110A9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE997AB61846893600D110A9 /* UIKit.framework */; };
+		AE997AD61846893600D110A9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AE997AD41846893600D110A9 /* InfoPlist.strings */; };
+		AE997AD81846893600D110A9 /* Son_of_a_PitchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AE997AD71846893600D110A9 /* Son_of_a_PitchTests.m */; };
+		AE997AE31846899B00D110A9 /* PianoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE997AE21846899B00D110A9 /* PianoViewController.m */; };
+		AE997AE618468ACC00D110A9 /* PianoKeyLarge.m in Sources */ = {isa = PBXBuildFile; fileRef = AE997AE518468ACC00D110A9 /* PianoKeyLarge.m */; };
+		AE997AE81846A56F00D110A9 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE997AE71846A56F00D110A9 /* AVFoundation.framework */; };
+		AE997AEE1846A6FB00D110A9 /* C4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AE997AEA1846A6FB00D110A9 /* C4.mp3 */; };
+		AE997AEF1846A6FB00D110A9 /* Csharp4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AE997AEB1846A6FB00D110A9 /* Csharp4.mp3 */; };
+		AE997AF01846A6FB00D110A9 /* D4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AE997AEC1846A6FB00D110A9 /* D4.mp3 */; };
+		AE997AF11846A6FB00D110A9 /* Dsharp4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AE997AED1846A6FB00D110A9 /* Dsharp4.mp3 */; };
+		AE997AFA1846ADF600D110A9 /* A4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AE997AF21846ADF600D110A9 /* A4.mp3 */; };
+		AE997AFB1846ADF600D110A9 /* Asharp4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AE997AF31846ADF600D110A9 /* Asharp4.mp3 */; };
+		AE997AFC1846ADF600D110A9 /* B4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AE997AF41846ADF600D110A9 /* B4.mp3 */; };
+		AE997AFD1846ADF600D110A9 /* E4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AE997AF51846ADF600D110A9 /* E4.mp3 */; };
+		AE997AFE1846ADF600D110A9 /* F4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AE997AF61846ADF600D110A9 /* F4.mp3 */; };
+		AE997AFF1846ADF600D110A9 /* Fsharp4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AE997AF71846ADF600D110A9 /* Fsharp4.mp3 */; };
+		AE997B001846ADF600D110A9 /* G4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AE997AF81846ADF600D110A9 /* G4.mp3 */; };
+		AE997B011846ADF600D110A9 /* Gsharp4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AE997AF91846ADF600D110A9 /* Gsharp4.mp3 */; };
+		AE9EF307184FE2AA002DE7D3 /* ToneGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = AE9EF306184FE2AA002DE7D3 /* ToneGenerator.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AE997ACF1846893600D110A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE997AA71846893500D110A9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE997AAE1846893500D110A9;
+			remoteInfo = "Son of a Pitch";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AE6DB1E7185EB9CC00BEF01C /* Piano.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Piano.h; sourceTree = "<group>"; };
+		AE6DB1E8185EB9CC00BEF01C /* Piano.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Piano.m; sourceTree = "<group>"; };
+		AE6DB1EA1862E17F00BEF01C /* OctaveSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OctaveSlider.h; sourceTree = "<group>"; };
+		AE6DB1EB1862E17F00BEF01C /* OctaveSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OctaveSlider.m; sourceTree = "<group>"; };
+		AE6DB1EE1862F12700BEF01C /* 1355112_65f9_625x625.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1355112_65f9_625x625.jpg; sourceTree = "<group>"; };
+		AE6DB1EF1862F12700BEF01C /* replay icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "replay icon.png"; sourceTree = "<group>"; };
+		AE6DB1F01862F12700BEF01C /* shuffle-icon-small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shuffle-icon-small.png"; sourceTree = "<group>"; };
+		AE6DB1F11862F12700BEF01C /* shuffle-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shuffle-icon.png"; sourceTree = "<group>"; };
+		AE6DB1F61862F25400BEF01C /* replay-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "replay-icon.png"; sourceTree = "<group>"; };
+		AE997AAF1846893500D110A9 /* Son of a Pitch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Son of a Pitch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE997AB21846893600D110A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AE997AB41846893600D110A9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		AE997AB61846893600D110A9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		AE997ABA1846893600D110A9 /* Son of a Pitch-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Son of a Pitch-Info.plist"; sourceTree = "<group>"; };
+		AE997ABC1846893600D110A9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AE997ABE1846893600D110A9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AE997AC01846893600D110A9 /* Son of a Pitch-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Son of a Pitch-Prefix.pch"; sourceTree = "<group>"; };
+		AE997AC11846893600D110A9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AE997AC21846893600D110A9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AE997AC41846893600D110A9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		AE997ACA1846893600D110A9 /* Son of a PitchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Son of a PitchTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE997ACB1846893600D110A9 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		AE997AD31846893600D110A9 /* Son of a PitchTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Son of a PitchTests-Info.plist"; sourceTree = "<group>"; };
+		AE997AD51846893600D110A9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AE997AD71846893600D110A9 /* Son_of_a_PitchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Son_of_a_PitchTests.m; sourceTree = "<group>"; };
+		AE997AE11846899B00D110A9 /* PianoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PianoViewController.h; sourceTree = "<group>"; };
+		AE997AE21846899B00D110A9 /* PianoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PianoViewController.m; sourceTree = "<group>"; };
+		AE997AE418468ACC00D110A9 /* PianoKeyLarge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PianoKeyLarge.h; sourceTree = "<group>"; };
+		AE997AE518468ACC00D110A9 /* PianoKeyLarge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PianoKeyLarge.m; sourceTree = "<group>"; };
+		AE997AE71846A56F00D110A9 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		AE997AEA1846A6FB00D110A9 /* C4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = C4.mp3; sourceTree = "<group>"; };
+		AE997AEB1846A6FB00D110A9 /* Csharp4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Csharp4.mp3; sourceTree = "<group>"; };
+		AE997AEC1846A6FB00D110A9 /* D4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = D4.mp3; sourceTree = "<group>"; };
+		AE997AED1846A6FB00D110A9 /* Dsharp4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Dsharp4.mp3; sourceTree = "<group>"; };
+		AE997AF21846ADF600D110A9 /* A4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = A4.mp3; sourceTree = "<group>"; };
+		AE997AF31846ADF600D110A9 /* Asharp4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Asharp4.mp3; sourceTree = "<group>"; };
+		AE997AF41846ADF600D110A9 /* B4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = B4.mp3; sourceTree = "<group>"; };
+		AE997AF51846ADF600D110A9 /* E4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = E4.mp3; sourceTree = "<group>"; };
+		AE997AF61846ADF600D110A9 /* F4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = F4.mp3; sourceTree = "<group>"; };
+		AE997AF71846ADF600D110A9 /* Fsharp4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Fsharp4.mp3; sourceTree = "<group>"; };
+		AE997AF81846ADF600D110A9 /* G4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = G4.mp3; sourceTree = "<group>"; };
+		AE997AF91846ADF600D110A9 /* Gsharp4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Gsharp4.mp3; sourceTree = "<group>"; };
+		AE9EF305184FE2AA002DE7D3 /* ToneGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToneGenerator.h; sourceTree = "<group>"; };
+		AE9EF306184FE2AA002DE7D3 /* ToneGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToneGenerator.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AE997AAC1846893500D110A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE997AE81846A56F00D110A9 /* AVFoundation.framework in Frameworks */,
+				AE997AB51846893600D110A9 /* CoreGraphics.framework in Frameworks */,
+				AE997AB71846893600D110A9 /* UIKit.framework in Frameworks */,
+				AE997AB31846893600D110A9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE997AC71846893600D110A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE997ACC1846893600D110A9 /* XCTest.framework in Frameworks */,
+				AE997ACE1846893600D110A9 /* UIKit.framework in Frameworks */,
+				AE997ACD1846893600D110A9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AE6DB1ED1862F12700BEF01C /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				AE6DB1F61862F25400BEF01C /* replay-icon.png */,
+				AE6DB1EE1862F12700BEF01C /* 1355112_65f9_625x625.jpg */,
+				AE6DB1EF1862F12700BEF01C /* replay icon.png */,
+				AE6DB1F01862F12700BEF01C /* shuffle-icon-small.png */,
+				AE6DB1F11862F12700BEF01C /* shuffle-icon.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		AE997AA61846893500D110A9 = {
+			isa = PBXGroup;
+			children = (
+				AE997AB81846893600D110A9 /* Son of a Pitch */,
+				AE997AD11846893600D110A9 /* Son of a PitchTests */,
+				AE997AB11846893500D110A9 /* Frameworks */,
+				AE997AB01846893500D110A9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AE997AB01846893500D110A9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AE997AAF1846893500D110A9 /* Son of a Pitch.app */,
+				AE997ACA1846893600D110A9 /* Son of a PitchTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AE997AB11846893500D110A9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AE997AE71846A56F00D110A9 /* AVFoundation.framework */,
+				AE997AB21846893600D110A9 /* Foundation.framework */,
+				AE997AB41846893600D110A9 /* CoreGraphics.framework */,
+				AE997AB61846893600D110A9 /* UIKit.framework */,
+				AE997ACB1846893600D110A9 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AE997AB81846893600D110A9 /* Son of a Pitch */ = {
+			isa = PBXGroup;
+			children = (
+				AE997AC11846893600D110A9 /* AppDelegate.h */,
+				AE997AC21846893600D110A9 /* AppDelegate.m */,
+				AE997AE11846899B00D110A9 /* PianoViewController.h */,
+				AE997AE21846899B00D110A9 /* PianoViewController.m */,
+				AE6DB1EA1862E17F00BEF01C /* OctaveSlider.h */,
+				AE6DB1EB1862E17F00BEF01C /* OctaveSlider.m */,
+				AE6DB1E7185EB9CC00BEF01C /* Piano.h */,
+				AE6DB1E8185EB9CC00BEF01C /* Piano.m */,
+				AE9EF305184FE2AA002DE7D3 /* ToneGenerator.h */,
+				AE9EF306184FE2AA002DE7D3 /* ToneGenerator.m */,
+				AE997AE418468ACC00D110A9 /* PianoKeyLarge.h */,
+				AE997AE518468ACC00D110A9 /* PianoKeyLarge.m */,
+				AE997AC41846893600D110A9 /* Images.xcassets */,
+				AE997AB91846893600D110A9 /* Supporting Files */,
+			);
+			path = "Son of a Pitch";
+			sourceTree = "<group>";
+		};
+		AE997AB91846893600D110A9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AE6DB1ED1862F12700BEF01C /* Images */,
+				AE997AE91846A6FB00D110A9 /* Pitches */,
+				AE997ABA1846893600D110A9 /* Son of a Pitch-Info.plist */,
+				AE997ABB1846893600D110A9 /* InfoPlist.strings */,
+				AE997ABE1846893600D110A9 /* main.m */,
+				AE997AC01846893600D110A9 /* Son of a Pitch-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AE997AD11846893600D110A9 /* Son of a PitchTests */ = {
+			isa = PBXGroup;
+			children = (
+				AE997AD71846893600D110A9 /* Son_of_a_PitchTests.m */,
+				AE997AD21846893600D110A9 /* Supporting Files */,
+			);
+			path = "Son of a PitchTests";
+			sourceTree = "<group>";
+		};
+		AE997AD21846893600D110A9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AE997AD31846893600D110A9 /* Son of a PitchTests-Info.plist */,
+				AE997AD41846893600D110A9 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AE997AE91846A6FB00D110A9 /* Pitches */ = {
+			isa = PBXGroup;
+			children = (
+				AE997AEA1846A6FB00D110A9 /* C4.mp3 */,
+				AE997AEB1846A6FB00D110A9 /* Csharp4.mp3 */,
+				AE997AEC1846A6FB00D110A9 /* D4.mp3 */,
+				AE997AED1846A6FB00D110A9 /* Dsharp4.mp3 */,
+				AE997AF51846ADF600D110A9 /* E4.mp3 */,
+				AE997AF61846ADF600D110A9 /* F4.mp3 */,
+				AE997AF71846ADF600D110A9 /* Fsharp4.mp3 */,
+				AE997AF81846ADF600D110A9 /* G4.mp3 */,
+				AE997AF91846ADF600D110A9 /* Gsharp4.mp3 */,
+				AE997AF21846ADF600D110A9 /* A4.mp3 */,
+				AE997AF31846ADF600D110A9 /* Asharp4.mp3 */,
+				AE997AF41846ADF600D110A9 /* B4.mp3 */,
+			);
+			path = Pitches;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AE997AAE1846893500D110A9 /* Son of a Pitch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE997ADB1846893600D110A9 /* Build configuration list for PBXNativeTarget "Son of a Pitch" */;
+			buildPhases = (
+				AE997AAB1846893500D110A9 /* Sources */,
+				AE997AAC1846893500D110A9 /* Frameworks */,
+				AE997AAD1846893500D110A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Son of a Pitch";
+			productName = "Son of a Pitch";
+			productReference = AE997AAF1846893500D110A9 /* Son of a Pitch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AE997AC91846893600D110A9 /* Son of a PitchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE997ADE1846893600D110A9 /* Build configuration list for PBXNativeTarget "Son of a PitchTests" */;
+			buildPhases = (
+				AE997AC61846893600D110A9 /* Sources */,
+				AE997AC71846893600D110A9 /* Frameworks */,
+				AE997AC81846893600D110A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AE997AD01846893600D110A9 /* PBXTargetDependency */,
+			);
+			name = "Son of a PitchTests";
+			productName = "Son of a PitchTests";
+			productReference = AE997ACA1846893600D110A9 /* Son of a PitchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AE997AA71846893500D110A9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Philip Liao";
+				TargetAttributes = {
+					AE997AC91846893600D110A9 = {
+						TestTargetID = AE997AAE1846893500D110A9;
+					};
+				};
+			};
+			buildConfigurationList = AE997AAA1846893500D110A9 /* Build configuration list for PBXProject "Son of a Pitch" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = AE997AA61846893500D110A9;
+			productRefGroup = AE997AB01846893500D110A9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AE997AAE1846893500D110A9 /* Son of a Pitch */,
+				AE997AC91846893600D110A9 /* Son of a PitchTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AE997AAD1846893500D110A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE997B001846ADF600D110A9 /* G4.mp3 in Resources */,
+				AE997AF01846A6FB00D110A9 /* D4.mp3 in Resources */,
+				AE997ABD1846893600D110A9 /* InfoPlist.strings in Resources */,
+				AE997AEE1846A6FB00D110A9 /* C4.mp3 in Resources */,
+				AE997AEF1846A6FB00D110A9 /* Csharp4.mp3 in Resources */,
+				AE6DB1F71862F25400BEF01C /* replay-icon.png in Resources */,
+				AE997AFB1846ADF600D110A9 /* Asharp4.mp3 in Resources */,
+				AE997AFD1846ADF600D110A9 /* E4.mp3 in Resources */,
+				AE997AC51846893600D110A9 /* Images.xcassets in Resources */,
+				AE6DB1F31862F12700BEF01C /* replay icon.png in Resources */,
+				AE997B011846ADF600D110A9 /* Gsharp4.mp3 in Resources */,
+				AE6DB1F51862F12700BEF01C /* shuffle-icon.png in Resources */,
+				AE997AFE1846ADF600D110A9 /* F4.mp3 in Resources */,
+				AE997AFC1846ADF600D110A9 /* B4.mp3 in Resources */,
+				AE6DB1F21862F12700BEF01C /* 1355112_65f9_625x625.jpg in Resources */,
+				AE997AFF1846ADF600D110A9 /* Fsharp4.mp3 in Resources */,
+				AE997AFA1846ADF600D110A9 /* A4.mp3 in Resources */,
+				AE6DB1F41862F12700BEF01C /* shuffle-icon-small.png in Resources */,
+				AE997AF11846A6FB00D110A9 /* Dsharp4.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE997AC81846893600D110A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE997AD61846893600D110A9 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AE997AAB1846893500D110A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE997AC31846893600D110A9 /* AppDelegate.m in Sources */,
+				AE6DB1EC1862E17F00BEF01C /* OctaveSlider.m in Sources */,
+				AE9EF307184FE2AA002DE7D3 /* ToneGenerator.m in Sources */,
+				AE997AE618468ACC00D110A9 /* PianoKeyLarge.m in Sources */,
+				AE6DB1E9185EB9CC00BEF01C /* Piano.m in Sources */,
+				AE997ABF1846893600D110A9 /* main.m in Sources */,
+				AE997AE31846899B00D110A9 /* PianoViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE997AC61846893600D110A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE997AD81846893600D110A9 /* Son_of_a_PitchTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AE997AD01846893600D110A9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE997AAE1846893500D110A9 /* Son of a Pitch */;
+			targetProxy = AE997ACF1846893600D110A9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AE997ABB1846893600D110A9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE997ABC1846893600D110A9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		AE997AD41846893600D110A9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE997AD51846893600D110A9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AE997AD91846893600D110A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AE997ADA1846893600D110A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AE997ADC1846893600D110A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Philip Liao (C86X4SP839)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Son of a Pitch/Son of a Pitch-Prefix.pch";
+				INFOPLIST_FILE = "Son of a Pitch/Son of a Pitch-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		AE997ADD1846893600D110A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Son of a Pitch/Son of a Pitch-Prefix.pch";
+				INFOPLIST_FILE = "Son of a Pitch/Son of a Pitch-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		AE997ADF1846893600D110A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Son of a Pitch.app/Son of a Pitch";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Son of a Pitch/Son of a Pitch-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Son of a PitchTests/Son of a PitchTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		AE997AE01846893600D110A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Son of a Pitch.app/Son of a Pitch";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Son of a Pitch/Son of a Pitch-Prefix.pch";
+				INFOPLIST_FILE = "Son of a PitchTests/Son of a PitchTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AE997AAA1846893500D110A9 /* Build configuration list for PBXProject "Son of a Pitch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE997AD91846893600D110A9 /* Debug */,
+				AE997ADA1846893600D110A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE997ADB1846893600D110A9 /* Build configuration list for PBXNativeTarget "Son of a Pitch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE997ADC1846893600D110A9 /* Debug */,
+				AE997ADD1846893600D110A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE997ADE1846893600D110A9 /* Build configuration list for PBXNativeTarget "Son of a PitchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE997ADF1846893600D110A9 /* Debug */,
+				AE997AE01846893600D110A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AE997AA71846893500D110A9 /* Project object */;
+}
