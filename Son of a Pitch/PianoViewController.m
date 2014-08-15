@@ -31,10 +31,10 @@
     CGFloat screenWidth = screenRect.size.width;
     CGFloat screenHeight = screenRect.size.height;
     
-    _mainView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, screenWidth, screenHeight)];
     _piano = [[Piano alloc] initWithFrame:screenRect];
-    self.view = _mainView;
-    [_mainView addSubview:_piano];
+    self.view  = [[UIView alloc] initWithFrame:CGRectMake(0, 0, screenWidth, screenHeight)];
+    self.view.backgroundColor = [UIColor colorWithRed:85.0/256.0 green:98.0/256.0 blue:112.0/256.0 alpha:1.0];
+    [self.view addSubview:_piano];
     
     /*
     
@@ -109,36 +109,38 @@
     
     //save this color [UIColor colorWithRed:244.0/256.0 green:234.0/256.0 blue:205.0/256.0 alpha:0.6]
     //create the randomize button
-    float buttonHeight = (1.0/8.0)*(screenHeight-20);
-    _randomizeButton = [[UIButton alloc] initWithFrame:CGRectMake(0, (7.0/8.0)*(screenHeight-20)+20, (screenWidth- 2*buttonHeight)/2, (screenHeight-20)/8.0-2)];
-    //UIImage *btnImage = [UIImage imageNamed:@"shuffle-icon.png"];
-    //[_randomizeButton setImage:btnImage forState:UIControlStateNormal];
-    //_randomizeButton.imageView.contentMode = UIViewContentModeScaleAspectFill;
-    //[_randomizeButton setTitle:@"Random" forState:UIControlStateNormal];
-    //_randomizeButton.titleLabel.textAlignment = NSTextAlignmentCenter;
-    //_randomizeButton.titleLabel.textColor = [UIColor blackColor];
-    _randomizeButton.backgroundColor = [UIColor colorWithRed:244.0/256.0 green:234.0/256.0 blue:205.0/256.0 alpha:1];
-    [_randomizeButton addTarget:_piano action:@selector(randomPitch) forControlEvents:UIControlEventTouchDown];
-    [_randomizeButton addTarget:_piano action:@selector(stopPitch) forControlEvents:UIControlEventTouchUpInside];
-    [_mainView addSubview:_randomizeButton];
-    
-    _randomPlayAgainButton = [[UIButton alloc] initWithFrame:CGRectMake((screenWidth- 2*buttonHeight)/2+2*buttonHeight, (7.0/8.0)*(screenHeight-20)+20, (screenWidth- 2*buttonHeight)/2, (screenHeight-20)/8.0-2)];
-    //UIImage *btn2Image = [UIImage imageNamed:@"replay-icon.png"];
-    //[_randomPlayAgainButton setImage:btn2Image forState:UIControlStateNormal];
-    //_randomPlayAgainButton.imageView.contentMode = UIViewContentModeScaleAspectFit;
-    //[_randomPlayAgainButton setTitle:@"Again" forState:UIControlStateNormal];
-    //_randomPlayAgainButton.titleLabel.textAlignment = NSTextAlignmentCenter;
-    //_randomPlayAgainButton.titleLabel.textColor = [UIColor blackColor];
-    _randomPlayAgainButton.backgroundColor = [UIColor colorWithRed:244.0/256.0 green:234.0/256.0 blue:205.0/256.0 alpha:1];
-    [_randomPlayAgainButton addTarget:_piano action:@selector(playRandomPitchAgain) forControlEvents:UIControlEventTouchDown];
-    [_randomPlayAgainButton addTarget:_piano action:@selector(stopPitch) forControlEvents:UIControlEventTouchUpInside];
-    [_mainView addSubview:_randomPlayAgainButton];
+    float buttonHeight = (1.0/9.0)*(screenHeight-20);
+    //_SOAPButton = [[UIButton alloc] initWithFrame:CGRectMake(buttonHeight +2 , 20, screenWidth - 2*buttonHeight-4, buttonHeight-2)];
+    _SOAPButton = [[UIButton alloc] initWithFrame:CGRectMake(0 , 20, screenWidth, buttonHeight-2)];
+    _SOAPButton.backgroundColor = [UIColor colorWithRed:10.0/256.0 green:89.0/256.0 blue:178.0/256.0 alpha:0.7];
+    [_SOAPButton addTarget:_piano action:@selector(randomPitch) forControlEvents:UIControlEventTouchDown];
+    [_SOAPButton addTarget:_piano action:@selector(stopRandom) forControlEvents:UIControlEventTouchUpInside];
+    [_SOAPButton setTitle:@"SOAP" forState:UIControlStateNormal];
+    _SOAPButton.titleLabel.textAlignment = NSTextAlignmentCenter;
+    _SOAPButton.titleLabel.font = [UIFont fontWithName:@"Futura-CondensedMedium" size:40.0f];
+    [self.view addSubview:_SOAPButton];
     
     
-    _octaveSlider = [[OctaveSlider alloc] initWithFrame:CGRectMake((screenWidth- 2*buttonHeight)/2 +2 , (7.0/8.0)*(screenHeight-20)+20, 2*buttonHeight-4, buttonHeight-2)];
-    _octaveSlider.backgroundColor = [UIColor colorWithRed:244.0/256.0 green:234.0/256.0 blue:205.0/256.0 alpha:0.6];
+    _octaveSlider = [[OctaveSlider alloc] initWithFrame:CGRectMake((screenWidth- 2*buttonHeight)/2 +2 , (8.0/9.0)*(screenHeight-20)+20, 2*buttonHeight-4, buttonHeight-2)];
+    _octaveSlider.backgroundColor = [UIColor colorWithRed:10.0/256.0 green:89.0/256.0 blue:178.0/256.0 alpha:0.7];
     _octaveSlider.delegate = self;
-    [_mainView addSubview:_octaveSlider];
+    [self.view addSubview:_octaveSlider];
+    
+    CGRect labelFrame = CGRectMake(0, (8.0/9.0)*(screenHeight-20)+20+10, (screenWidth - 2*buttonHeight)/2-2, buttonHeight-2);
+    UILabel* label = [[UILabel alloc] initWithFrame:labelFrame];
+    label.text = @"down";
+    [label setFont:[UIFont fontWithName:@"Futura-Medium" size:15.0f]];
+    label.textAlignment = NSTextAlignmentCenter;
+    [label setTextColor: [UIColor whiteColor]];
+    [self.view addSubview:label];
+    
+    CGRect labelUpFrame = CGRectMake((screenWidth - 2*buttonHeight)/2 + 2*buttonHeight, (8.0/9.0)*(screenHeight-20)+20, (screenWidth - 2*buttonHeight)/2-2, buttonHeight-2-20);
+    UILabel* labelUp = [[UILabel alloc] initWithFrame:labelUpFrame];
+    labelUp.text = @"up";
+    [labelUp setFont:[UIFont fontWithName:@"Futura-Medium" size:15.0f]];
+    labelUp.textAlignment = NSTextAlignmentCenter;
+    [labelUp setTextColor: [UIColor whiteColor]];
+    [self.view addSubview:labelUp];
 
     
     //set the colors

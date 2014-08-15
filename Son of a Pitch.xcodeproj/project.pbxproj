@@ -27,7 +27,6 @@
 		AE997AD61846893600D110A9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AE997AD41846893600D110A9 /* InfoPlist.strings */; };
 		AE997AD81846893600D110A9 /* Son_of_a_PitchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AE997AD71846893600D110A9 /* Son_of_a_PitchTests.m */; };
 		AE997AE31846899B00D110A9 /* PianoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE997AE21846899B00D110A9 /* PianoViewController.m */; };
-		AE997AE618468ACC00D110A9 /* PianoKeyLarge.m in Sources */ = {isa = PBXBuildFile; fileRef = AE997AE518468ACC00D110A9 /* PianoKeyLarge.m */; };
 		AE997AE81846A56F00D110A9 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE997AE71846A56F00D110A9 /* AVFoundation.framework */; };
 		AE997AEE1846A6FB00D110A9 /* C4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AE997AEA1846A6FB00D110A9 /* C4.mp3 */; };
 		AE997AEF1846A6FB00D110A9 /* Csharp4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AE997AEB1846A6FB00D110A9 /* Csharp4.mp3 */; };
@@ -42,6 +41,7 @@
 		AE997B001846ADF600D110A9 /* G4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AE997AF81846ADF600D110A9 /* G4.mp3 */; };
 		AE997B011846ADF600D110A9 /* Gsharp4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AE997AF91846ADF600D110A9 /* Gsharp4.mp3 */; };
 		AE9EF307184FE2AA002DE7D3 /* ToneGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = AE9EF306184FE2AA002DE7D3 /* ToneGenerator.m */; };
+		AEBADE68199C8A1400CC7BB8 /* PianoKey.m in Sources */ = {isa = PBXBuildFile; fileRef = AEBADE67199C8A1400CC7BB8 /* PianoKey.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,8 +82,6 @@
 		AE997AD71846893600D110A9 /* Son_of_a_PitchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Son_of_a_PitchTests.m; sourceTree = "<group>"; };
 		AE997AE11846899B00D110A9 /* PianoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PianoViewController.h; sourceTree = "<group>"; };
 		AE997AE21846899B00D110A9 /* PianoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PianoViewController.m; sourceTree = "<group>"; };
-		AE997AE418468ACC00D110A9 /* PianoKeyLarge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PianoKeyLarge.h; sourceTree = "<group>"; };
-		AE997AE518468ACC00D110A9 /* PianoKeyLarge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PianoKeyLarge.m; sourceTree = "<group>"; };
 		AE997AE71846A56F00D110A9 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		AE997AEA1846A6FB00D110A9 /* C4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = C4.mp3; sourceTree = "<group>"; };
 		AE997AEB1846A6FB00D110A9 /* Csharp4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Csharp4.mp3; sourceTree = "<group>"; };
@@ -99,6 +97,8 @@
 		AE997AF91846ADF600D110A9 /* Gsharp4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Gsharp4.mp3; sourceTree = "<group>"; };
 		AE9EF305184FE2AA002DE7D3 /* ToneGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToneGenerator.h; sourceTree = "<group>"; };
 		AE9EF306184FE2AA002DE7D3 /* ToneGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToneGenerator.m; sourceTree = "<group>"; };
+		AEBADE66199C8A1400CC7BB8 /* PianoKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PianoKey.h; sourceTree = "<group>"; };
+		AEBADE67199C8A1400CC7BB8 /* PianoKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PianoKey.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,10 +180,10 @@
 				AE6DB1EB1862E17F00BEF01C /* OctaveSlider.m */,
 				AE6DB1E7185EB9CC00BEF01C /* Piano.h */,
 				AE6DB1E8185EB9CC00BEF01C /* Piano.m */,
+				AEBADE66199C8A1400CC7BB8 /* PianoKey.h */,
+				AEBADE67199C8A1400CC7BB8 /* PianoKey.m */,
 				AE9EF305184FE2AA002DE7D3 /* ToneGenerator.h */,
 				AE9EF306184FE2AA002DE7D3 /* ToneGenerator.m */,
-				AE997AE418468ACC00D110A9 /* PianoKeyLarge.h */,
-				AE997AE518468ACC00D110A9 /* PianoKeyLarge.m */,
 				AE997AC41846893600D110A9 /* Images.xcassets */,
 				AE997AB91846893600D110A9 /* Supporting Files */,
 			);
@@ -355,10 +355,10 @@
 				AE997AC31846893600D110A9 /* AppDelegate.m in Sources */,
 				AE6DB1EC1862E17F00BEF01C /* OctaveSlider.m in Sources */,
 				AE9EF307184FE2AA002DE7D3 /* ToneGenerator.m in Sources */,
-				AE997AE618468ACC00D110A9 /* PianoKeyLarge.m in Sources */,
 				AE6DB1E9185EB9CC00BEF01C /* Piano.m in Sources */,
 				AE997ABF1846893600D110A9 /* main.m in Sources */,
 				AE997AE31846899B00D110A9 /* PianoViewController.m in Sources */,
+				AEBADE68199C8A1400CC7BB8 /* PianoKey.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

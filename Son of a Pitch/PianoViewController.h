@@ -18,13 +18,8 @@
 
 @interface PianoViewController : UIViewController <OctaveSliderDelegate>
 
-@property AVAudioPlayer *audioPlayer;
-@property ToneGenerator *tonePlayer;
-@property UIView *mainView;
 @property Piano *piano;
-@property UILabel *noteName;
-@property UIButton *randomizeButton;
-@property UIButton *randomPlayAgainButton;
+@property UIButton *SOAPButton;
 @property OctaveSlider *octaveSlider;
 
 @property UIColor * defaultColor;
@@ -40,9 +35,6 @@
 @property UIColor * A4Color;
 @property UIColor * Asharp4Color;
 @property UIColor * B4Color;
-
-
-@property Notes notes;
 
 
 - (void)octaveSliderChangedOctave:(int) value;

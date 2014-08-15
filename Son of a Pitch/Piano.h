@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #include <stdlib.h>
 #import "ToneGenerator.h"
+#import "PianoKey.h"
 #import <math.h>
 #import <AVFoundation/AVFoundation.h>
 #import <QuartzCore/QuartzCore.h>
@@ -17,13 +18,28 @@
 
 @property ToneGenerator *tonePlayer;
 @property UILabel *noteName;
-@property UIView *octaveUpGradient;
-@property UIView *octaveDownGradient;
-@property int currentRandomNote;
+@property Pitch currentRandomNote;
 @property UIButton *randomButtomMirror;
 @property double currentOctave;
 
-@property UIColor * defaultColor;
+
+@property PianoKey* C;
+@property PianoKey* Cs;
+@property PianoKey* D;
+@property PianoKey* Ds;
+@property PianoKey* E;
+@property PianoKey* F;
+@property PianoKey* Fs;
+@property PianoKey* G;
+@property PianoKey* Gs;
+@property PianoKey* A;
+@property PianoKey* As;
+@property PianoKey* B;
+
+
+
+@property UIColor * blackKeyColor;
+@property UIColor * whiteKeyColor;
 @property UIColor * C4Color;
 @property UIColor * Csharp4Color;
 @property UIColor * D4Color;
@@ -37,30 +53,12 @@
 @property UIColor * Asharp4Color;
 @property UIColor * B4Color;
 
-typedef enum {
-    C4=0,
-    D4=1,
-    E4=2,
-    F4=3,
-    G4=4,
-    A4=5,
-    B4=6,
-    Csharp4=7,
-    Dsharp4=8,
-    Fsharp4=9,
-    Gsharp4=10,
-    Asharp4=11
-} Notes;
+@property BOOL blackKeyPressed;
 
-@property Notes notes;
-
-- (void)playPitch: (int) pitch;
-- (void)changePitch: (int) pitch;
+- (void)playPitch: (Pitch) pitch;
+- (void)changePitch: (Pitch) pitch;
 - (void)stopPitch;
-- (void)playRandomPitch: (int) pitch;
-- (void)playRandomPitchAgain;
 - (void)hidePitch;
-- (void)playAndShowPitch: (int) pitch;
 - (void)randomPitch;
 
 - (void) changeCurrentOctave: (int) offset;
