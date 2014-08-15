@@ -255,6 +255,11 @@
         _tonePlayer.frequency = currentFrequency*_currentOctave;
         [_tonePlayer play];   
     }
+    else
+    {
+        double currentFrequency = 440.0* pow(2, pitch/12.0);
+        _tonePlayer.frequency = currentFrequency*_currentOctave;
+    }
 }
 
 -(void) changePitch: (Pitch) pitch
@@ -353,6 +358,7 @@
 
 - (void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
+    [NSObject cancelPreviousPerformRequestsWithTarget:self];
     NSSet *allTouches = [event allTouches];
     for (UITouch *touch in allTouches)
     {
@@ -451,13 +457,13 @@
 
 - (void) touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
 {
-    [self stopPitch];
     [self hidePitch];
     _blackKeyPressed = false;
     for ( PianoKey* key in [self subviews]) {
         if ([key respondsToSelector:@selector(releaseAnimation)]) [key releaseAnimation];
     }
-    
+    [self stopPitch];
+
 }
 
 

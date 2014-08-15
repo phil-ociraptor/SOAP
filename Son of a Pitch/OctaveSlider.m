@@ -38,9 +38,9 @@
     float buttonHeight = (1.0/8.0)*(screenHeight-20);
     CGFloat originalX = (screenWidth - 2*buttonHeight)/2.0 + 2;
 
-    if( self.frame.origin.x - originalX > buttonHeight-20) {
+    if( self.frame.origin.x - originalX > buttonHeight+12) {
         [self octaveUp];
-    } else if (self.frame.origin.x - originalX < -buttonHeight+20 ){
+    } else if (self.frame.origin.x - originalX < -buttonHeight+40 ){
         [self octaveDown];
     } else {
         [self octaveReset];

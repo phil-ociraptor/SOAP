@@ -30,7 +30,7 @@
 {
     if (!_isPressed)
     {
-        [self resizeTo:0.95 withDuration:0.05];
+        [self resizeTo:0.9 withDuration:0.05];
         _isPressed = true;
     }
 }
@@ -39,7 +39,7 @@
 {
     if (_isPressed)
     {
-        [self resizeTo:1.0/0.95 withDuration:0.1];
+        [self resizeTo:1.0/0.9 withDuration:0.1];
         _isPressed = false;
     }
 }

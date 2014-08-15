@@ -36,75 +36,7 @@
     self.view.backgroundColor = [UIColor colorWithRed:85.0/256.0 green:98.0/256.0 blue:112.0/256.0 alpha:1.0];
     [self.view addSubview:_piano];
     
-    /*
-    
-    //make the keys
-    CGFloat whiteSpace = 2;
-    CGFloat keyHeight = 69 - whiteSpace;
-    CGFloat smallKeyHeight = keyHeight - 10;
-    CGFloat smallKeyWidth = 320 - 140;
-    CGFloat smallKeyShift = (320 - smallKeyWidth)/2;
-    _defaultColor = [UIColor colorWithRed:160.0/256.0 green:160.0/256.0 blue:160.0/256.0 alpha:1.0];
-    
-    //[UIColor colorWithRed:90.0/256.0 green:61.0/256.0 blue:49.0/256.0 alpha:1.0];
-    
-    //a grey color
-    //[UIColor colorWithRed:86.0/256.0 green:81.0/256.0 blue:89.0/256.0 alpha:1.0];
-    // the weird blue color I was using
-    //[UIColor colorWithRed:167.0/256.0 green:219.0/256.0 blue:216.0/256.0 alpha:1.0];
-    
-    //large keys
-    for( int i = 0; i<7; i++)
-    {
-        UIButton * pianoKey = [[UIButton alloc] initWithFrame:CGRectMake(0, i*(keyHeight + whiteSpace)+20, 320, keyHeight)];
-        pianoKey.backgroundColor = [_defaultColor colorWithAlphaComponent:0.7];
-        pianoKey.tag = i;
-        [pianoKey addTarget:self action:@selector(playAndShowPitch:) forControlEvents:UIControlEventTouchDown];
-        [pianoKey addTarget:self action:@selector(stopPitch) forControlEvents:UIControlEventTouchUpInside];
-        [pianoKey addTarget:self action:@selector(hidePitch) forControlEvents:UIControlEventTouchUpInside];
-        [pianoKey addTarget:self action:@selector(stopPitch) forControlEvents:UIControlEventTouchDragOutside];
-        [pianoKey addTarget:self action:@selector(hidePitch) forControlEvents:UIControlEventTouchDragOutside];
 
-
-        [_piano addSubview: pianoKey ];
-        
-    }
-    
-    //small keys
-    for( int j = 0; j < 5; j++)
-    {
-        if( j < 2)
-        {
-            UIButton * pianoKey = [[UIButton alloc] initWithFrame:CGRectMake(smallKeyShift, j*(keyHeight + whiteSpace) + keyHeight/2 + 20 + 5, smallKeyWidth, smallKeyHeight)];
-            pianoKey.backgroundColor = [_defaultColor colorWithAlphaComponent:1];
-            pianoKey.tag = j+7;
-            [pianoKey addTarget:self action:@selector(playAndShowPitch:) forControlEvents:UIControlEventTouchDown];
-            [pianoKey addTarget:self action:@selector(stopPitch) forControlEvents:UIControlEventTouchUpInside];
-            [pianoKey addTarget:self action:@selector(hidePitch) forControlEvents:UIControlEventTouchUpInside];
-            [pianoKey addTarget:self action:@selector(stopPitch) forControlEvents:UIControlEventTouchDragOutside];
-            [pianoKey addTarget:self action:@selector(hidePitch) forControlEvents:UIControlEventTouchDragOutside];
-            
-            [_piano addSubview: pianoKey ];
-            
-        }
-        //make a gap
-        else if (j >= 2)
-        {
-            UIButton * pianoKey = [[UIButton alloc] initWithFrame:CGRectMake(smallKeyShift, (j+1)*(keyHeight + whiteSpace) + keyHeight/2 + 20 + 5, smallKeyWidth, smallKeyHeight)];
-            pianoKey.backgroundColor = [_defaultColor colorWithAlphaComponent:1];
-            pianoKey.tag = j+7;
-            [pianoKey addTarget:self action:@selector(playAndShowPitch:) forControlEvents:UIControlEventTouchDown];
-            [pianoKey addTarget:self action:@selector(stopPitch) forControlEvents:UIControlEventTouchUpInside];
-            [pianoKey addTarget:self action:@selector(hidePitch) forControlEvents:UIControlEventTouchUpInside];
-            [pianoKey addTarget:self action:@selector(stopPitch) forControlEvents:UIControlEventTouchDragOutside];
-            [pianoKey addTarget:self action:@selector(hidePitch) forControlEvents:UIControlEventTouchDragOutside];
-
-            
-            [_piano addSubview: pianoKey ];
-        }
-    }
-    
-    */
     
     
     //save this color [UIColor colorWithRed:244.0/256.0 green:234.0/256.0 blue:205.0/256.0 alpha:0.6]
@@ -115,9 +47,9 @@
     _SOAPButton.backgroundColor = [UIColor colorWithRed:10.0/256.0 green:89.0/256.0 blue:178.0/256.0 alpha:0.7];
     [_SOAPButton addTarget:_piano action:@selector(randomPitch) forControlEvents:UIControlEventTouchDown];
     [_SOAPButton addTarget:_piano action:@selector(stopRandom) forControlEvents:UIControlEventTouchUpInside];
-    [_SOAPButton setTitle:@"SOAP" forState:UIControlStateNormal];
+    [_SOAPButton setTitle:@"Soap!" forState:UIControlStateNormal];
     _SOAPButton.titleLabel.textAlignment = NSTextAlignmentCenter;
-    _SOAPButton.titleLabel.font = [UIFont fontWithName:@"Futura-CondensedMedium" size:40.0f];
+    _SOAPButton.titleLabel.font = [UIFont fontWithName:@"Futura-Medium" size:25.0f];
     [self.view addSubview:_SOAPButton];
     
     

@@ -76,6 +76,7 @@ void ToneInterruptionListener(void *inClientData, UInt32 inInterruptionState)
         _amplitude = volume;
         _sampleRate = SAMPLE_RATE_DEFAULT;
         _isPlaying = FALSE;
+        [self createToneUnit];
         
         OSStatus result = AudioSessionInitialize(NULL, NULL, ToneInterruptionListener, (__bridge void *)(self));
         if (result == kAudioSessionNoError)
@@ -98,8 +99,11 @@ void ToneInterruptionListener(void *inClientData, UInt32 inInterruptionState)
 
 - (void)play
 {
+    if (_isPlaying) return;
     _isPlaying = TRUE;
     
+    AudioOutputUnitStart(_toneUnit);
+    /*
     if (!_toneUnit)
     {
         [self createToneUnit];
@@ -113,8 +117,10 @@ void ToneInterruptionListener(void *inClientData, UInt32 inInterruptionState)
         NSAssert1(err == noErr, @"Error starting unit: %hd", err);
         
     }
+    */
     
     [self fadeVolumeUp];
+    
 }
 
 - (void)fadeVolumeUp
@@ -130,8 +136,9 @@ void ToneInterruptionListener(void *inClientData, UInt32 inInterruptionState)
 - (void)stop
 {
     _isPlaying = FALSE;
-    [self fadeVolumeDown];
-        
+    //[self fadeVolumeDown];
+    AudioOutputUnitStop(_toneUnit);
+    /*
     if (_toneUnit)
     {
         AudioOutputUnitStop(_toneUnit);
@@ -139,11 +146,12 @@ void ToneInterruptionListener(void *inClientData, UInt32 inInterruptionState)
         AudioComponentInstanceDispose(_toneUnit);
         _toneUnit = nil;
     }
+     */
 }
 
 - (void)fadeVolumeDown
 {
-    _amplitude = _amplitude - 0.005;
+    _amplitude = _amplitude - 0.05;
     if (_amplitude > 0) {
         [self performSelector:@selector(fadeVolumeDown) withObject:nil afterDelay:1.0/SAMPLE_RATE_DEFAULT];
     } else {

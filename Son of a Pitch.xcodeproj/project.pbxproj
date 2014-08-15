@@ -9,11 +9,6 @@
 /* Begin PBXBuildFile section */
 		AE6DB1E9185EB9CC00BEF01C /* Piano.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6DB1E8185EB9CC00BEF01C /* Piano.m */; };
 		AE6DB1EC1862E17F00BEF01C /* OctaveSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6DB1EB1862E17F00BEF01C /* OctaveSlider.m */; };
-		AE6DB1F21862F12700BEF01C /* 1355112_65f9_625x625.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AE6DB1EE1862F12700BEF01C /* 1355112_65f9_625x625.jpg */; };
-		AE6DB1F31862F12700BEF01C /* replay icon.png in Resources */ = {isa = PBXBuildFile; fileRef = AE6DB1EF1862F12700BEF01C /* replay icon.png */; };
-		AE6DB1F41862F12700BEF01C /* shuffle-icon-small.png in Resources */ = {isa = PBXBuildFile; fileRef = AE6DB1F01862F12700BEF01C /* shuffle-icon-small.png */; };
-		AE6DB1F51862F12700BEF01C /* shuffle-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = AE6DB1F11862F12700BEF01C /* shuffle-icon.png */; };
-		AE6DB1F71862F25400BEF01C /* replay-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = AE6DB1F61862F25400BEF01C /* replay-icon.png */; };
 		AE997AB31846893600D110A9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE997AB21846893600D110A9 /* Foundation.framework */; };
 		AE997AB51846893600D110A9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE997AB41846893600D110A9 /* CoreGraphics.framework */; };
 		AE997AB71846893600D110A9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE997AB61846893600D110A9 /* UIKit.framework */; };
@@ -59,11 +54,6 @@
 		AE6DB1E8185EB9CC00BEF01C /* Piano.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Piano.m; sourceTree = "<group>"; };
 		AE6DB1EA1862E17F00BEF01C /* OctaveSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OctaveSlider.h; sourceTree = "<group>"; };
 		AE6DB1EB1862E17F00BEF01C /* OctaveSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OctaveSlider.m; sourceTree = "<group>"; };
-		AE6DB1EE1862F12700BEF01C /* 1355112_65f9_625x625.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1355112_65f9_625x625.jpg; sourceTree = "<group>"; };
-		AE6DB1EF1862F12700BEF01C /* replay icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "replay icon.png"; sourceTree = "<group>"; };
-		AE6DB1F01862F12700BEF01C /* shuffle-icon-small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shuffle-icon-small.png"; sourceTree = "<group>"; };
-		AE6DB1F11862F12700BEF01C /* shuffle-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shuffle-icon.png"; sourceTree = "<group>"; };
-		AE6DB1F61862F25400BEF01C /* replay-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "replay-icon.png"; sourceTree = "<group>"; };
 		AE997AAF1846893500D110A9 /* Son of a Pitch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Son of a Pitch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE997AB21846893600D110A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		AE997AB41846893600D110A9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -129,11 +119,6 @@
 		AE6DB1ED1862F12700BEF01C /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				AE6DB1F61862F25400BEF01C /* replay-icon.png */,
-				AE6DB1EE1862F12700BEF01C /* 1355112_65f9_625x625.jpg */,
-				AE6DB1EF1862F12700BEF01C /* replay icon.png */,
-				AE6DB1F01862F12700BEF01C /* shuffle-icon-small.png */,
-				AE6DB1F11862F12700BEF01C /* shuffle-icon.png */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -320,19 +305,14 @@
 				AE997ABD1846893600D110A9 /* InfoPlist.strings in Resources */,
 				AE997AEE1846A6FB00D110A9 /* C4.mp3 in Resources */,
 				AE997AEF1846A6FB00D110A9 /* Csharp4.mp3 in Resources */,
-				AE6DB1F71862F25400BEF01C /* replay-icon.png in Resources */,
 				AE997AFB1846ADF600D110A9 /* Asharp4.mp3 in Resources */,
 				AE997AFD1846ADF600D110A9 /* E4.mp3 in Resources */,
 				AE997AC51846893600D110A9 /* Images.xcassets in Resources */,
-				AE6DB1F31862F12700BEF01C /* replay icon.png in Resources */,
 				AE997B011846ADF600D110A9 /* Gsharp4.mp3 in Resources */,
-				AE6DB1F51862F12700BEF01C /* shuffle-icon.png in Resources */,
 				AE997AFE1846ADF600D110A9 /* F4.mp3 in Resources */,
 				AE997AFC1846ADF600D110A9 /* B4.mp3 in Resources */,
-				AE6DB1F21862F12700BEF01C /* 1355112_65f9_625x625.jpg in Resources */,
 				AE997AFF1846ADF600D110A9 /* Fsharp4.mp3 in Resources */,
 				AE997AFA1846ADF600D110A9 /* A4.mp3 in Resources */,
-				AE6DB1F41862F12700BEF01C /* shuffle-icon-small.png in Resources */,
 				AE997AF11846A6FB00D110A9 /* Dsharp4.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
