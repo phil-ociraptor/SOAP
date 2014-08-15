@@ -161,7 +161,7 @@
 
 
 
-+(NSString*)getStringOf:(Pitch)pitch
++ (NSString*)getStringOf:(Pitch)pitch
 {
     NSString *noteString = [[NSString alloc] init];
     
@@ -183,7 +183,7 @@
 }
 
 
--(UIColor*)getColorOf:(Pitch)pitch
+- (UIColor*)getColorOf:(Pitch)pitch
 {
     UIColor *noteColor = [[UIColor alloc] init];
     
@@ -323,7 +323,7 @@
     [self showRandom:_currentRandomNote];
 }
 
--(void) showRandom:(Pitch)pitch
+- (void)showRandom:(Pitch)pitch
 {
     
     [_noteName setBackgroundColor:[[self getColorOf:pitch] colorWithAlphaComponent:0.7] ];
@@ -345,11 +345,6 @@
 {
     [self stopPitch];
     [self hidePitch];
-}
-
-- (void)randomPitchAgain
-{
-    [self playPitch:_currentRandomNote];
 }
 
 

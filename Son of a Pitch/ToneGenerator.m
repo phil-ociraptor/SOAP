@@ -100,25 +100,9 @@ void ToneInterruptionListener(void *inClientData, UInt32 inInterruptionState)
 - (void)play
 {
     if (_isPlaying) return;
+    
     _isPlaying = TRUE;
-    
     AudioOutputUnitStart(_toneUnit);
-    /*
-    if (!_toneUnit)
-    {
-        [self createToneUnit];
-        
-        // Stop changing parameters on the unit
-        OSErr err = AudioUnitInitialize(_toneUnit);
-        NSAssert1(err == noErr, @"Error initializing unit: %hd", err);
-        
-        // Start playback
-        err = AudioOutputUnitStart(_toneUnit);
-        NSAssert1(err == noErr, @"Error starting unit: %hd", err);
-        
-    }
-    */
-    
     [self fadeVolumeUp];
     
 }
@@ -136,17 +120,7 @@ void ToneInterruptionListener(void *inClientData, UInt32 inInterruptionState)
 - (void)stop
 {
     _isPlaying = FALSE;
-    //[self fadeVolumeDown];
     AudioOutputUnitStop(_toneUnit);
-    /*
-    if (_toneUnit)
-    {
-        AudioOutputUnitStop(_toneUnit);
-        AudioUnitUninitialize(_toneUnit);
-        AudioComponentInstanceDispose(_toneUnit);
-        _toneUnit = nil;
-    }
-     */
 }
 
 - (void)fadeVolumeDown

@@ -107,7 +107,7 @@
 
 }
 
--(void)resizeTo:(float)targetRatio withDuration:(float)duration {
+- (void)resizeTo:(float)targetRatio withDuration:(float)duration {
     CGAffineTransform originalTransform = self.transform;
     [UIView animateWithDuration:duration animations:^{
         self.transform = CGAffineTransformScale(originalTransform, targetRatio, targetRatio);
@@ -116,7 +116,7 @@
 
 #pragma mark - Touch Events
 
--(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
     [self pressAnimation];
 }
@@ -128,14 +128,10 @@
     CGFloat screenHeight = screenRect.size.height;
     float buttonHeight = (1.0/8.0)*(screenHeight-20);
     
-    //if ([touches count] == 1) {
     CGFloat deltaX = [[touches anyObject] locationInView:self.superview].x - [[touches anyObject] previousLocationInView:self.superview].x;
     
     
     CGFloat newX = self.frame.origin.x + deltaX;
-    
-    CGFloat originalX = (screenWidth - 2*buttonHeight)/2.0 + 2;
-    
     
     
     
@@ -152,29 +148,12 @@
     self.frame = CGRectMake(newX, self.frame.origin.y, self.frame.size.width, self.frame.size.height);
     
     [self checkOctave];
-    /*
-     NSSet *allTouches = [event allTouches];
-     //if ([allTouches count] == 1 ) {
-     for (UITouch *touch in allTouches)
-     {
-     
-     CGPoint location = [touch locationInView:self.superview];
-     
-     if( location.x > originalX) {
-     [self octaveUp];
-     } else if (location.x < originalX ){
-     [self octaveDown];
-     } else {
-     [self octaveReset];
-     }
-     }
-     //}
-     */
+
 }
 
 
 
-- (void) touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
+- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
 {
     [self releaseAnimation];
     [self snapBack];

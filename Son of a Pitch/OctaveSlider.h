@@ -18,14 +18,14 @@
 @property UIViewController* parentController;
 
 
-- (void) octaveUp;
-- (void) octaveDown;
+- (void)octaveUp;
+- (void)octaveDown;
 
 @end
 
 
 @protocol OctaveSliderDelegate <NSObject>
 
-- (void)octaveSliderChangedOctave:(int) value;
+- (void)octaveSliderChangedOctave:(int)value;
 
 @end

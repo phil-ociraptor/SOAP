@@ -60,6 +60,10 @@
 - (void)stopPitch;
 - (void)hidePitch;
 - (void)randomPitch;
+- (void)stopRandom;
+- (void)showRandom:(Pitch)pitch;
+
+
 
 - (void) changeCurrentOctave: (int) offset;
 
